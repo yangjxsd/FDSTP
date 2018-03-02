@@ -21,7 +21,7 @@
                         <img :src="props.data[0]" />
                     </div>
                 </el-popover>
-                <img :src="props.data[0]" v-popover:0 />
+                <img :src="props.data[0]" height="60" v-popover:0 />
             </template>
             <template :slot="1" slot-scope="props" v-if="1 < photoColumn.length">
                 <el-popover ref="1" placement="top" width="450">
@@ -29,7 +29,7 @@
                         <img :src="props.data[1]" />
                     </div>
                 </el-popover>
-                <img :src="props.data[1]" v-popover:1 />
+                <img :src="props.data[1]" height="60" v-popover:1 />
             </template>
             <template :slot="2" slot-scope="props" v-if="2 < photoColumn.length">
                 <el-popover ref="2" placement="top" width="450">
@@ -37,7 +37,7 @@
                         <img :src="props.data[2]" />
                     </div>
                 </el-popover>
-                <img :src="props.data[2]" v-popover:2 />
+                <img :src="props.data[2]" height="60" v-popover:2 />
             </template>
             <template :slot="3" slot-scope="props" v-if="3 < photoColumn.length">
                 <el-popover ref="3" placement="top" width="450">
@@ -45,7 +45,7 @@
                         <img :src="props.data[3]" />
                     </div>
                 </el-popover>
-                <img :src="props.data[3]" v-popover:3 />
+                <img :src="props.data[3]" height="60" v-popover:3 />
             </template>
             <template :slot="4" slot-scope="props" v-if="4 < photoColumn.length">
                 <el-popover ref="4" placement="top" width="450">
@@ -53,7 +53,7 @@
                         <img :src="props.data[4]" />
                     </div>
                 </el-popover>
-                <img :src="props.data[4]" v-popover:4 />
+                <img :src="props.data[4]" height="60" v-popover:4 />
             </template>
             <template :slot="5" slot-scope="props" v-if="5 < photoColumn.length">
                 <el-popover ref="5" placement="top" width="450">
@@ -61,7 +61,7 @@
                         <img :src="props.data[5]" />
                     </div>
                 </el-popover>
-                <img :src="props.data[5]" v-popover:5 />
+                <img :src="props.data[5]" height="60" v-popover:5 />
             </template>
             <p slot="operate">
                 <el-table-column label="操作" width="100">

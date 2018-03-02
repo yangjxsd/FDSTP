@@ -141,7 +141,7 @@
         },
         mounted() {
             this.tableName = TABLE_NAME;
-            // this.getRacingTeam();
+            this.getRacingTeam();
             this.queryTable({
                     table: this.TABLE_NAME,
                     sDate: this.formatDate(this.checkDate[0]),

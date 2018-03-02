@@ -16,9 +16,10 @@
                 </el-dialog>
             </p>
             <p slot="operate">
-                <el-table-column label="操作" width="100">
+                <el-table-column label="操作" width="250">
                     <template slot-scope="scope">
-                        <Truck :dataSource="scope.row.receiveTruckList" :row="scope.row" :tableName="TABLE_NAME" />
+                        <Truck :dataSource="scope.row.receiveTruckList" :row="scope.row" :tableName="send" />
+                        <Truck :dataSource="scope.row.notReceiveTruckList" :row="scope.row" :tableName="notSend" />
                     </template>
                 </el-table-column>
             </p>
@@ -33,6 +34,8 @@
     import Editor from 'Components/editor/index';
     import Truck from 'Components/truck/index';
     const TABLE_NAME = 'weatherQuery';
+    const send = '已接收车辆';
+    const notSend = '未接收车辆';
     export default {
         mixins: [mixin],
         components: {
@@ -47,6 +50,8 @@
             thisDate.setDate(1);
             return {
                 TABLE_NAME,
+                send,
+                notSend,
                 contentVisible: false,
                 contentId: '',
                 checkDate: [thisDate, new Date()]

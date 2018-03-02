@@ -2,14 +2,14 @@
     <div class="motorcade">
         <el-popover ref="popover" placement="bottom" trigger="click" v-model="visible">
             <el-table ref="multipleTable" :data="dataSource" style="width: 100%" @selection-change="handleSelectionChange">
-                <el-table-column label="已接收车辆" width="360" prop="motorcadeName">
+                <el-table-column label="车辆列表" width="360" prop="motorcadeName">
                 </el-table-column>
             </el-table>
-            <div class="motorcade-btn">
+            <!-- <div class="motorcade-btn">
                 <el-button type="primary" size="mini" @click="issued">确定</el-button>
-            </div>
+            </div> -->
         </el-popover>
-        <el-button type="text" size="small" v-popover:popover @click="visible =true">查看接收车辆</el-button>
+        <el-button type="text" size="small" v-popover:popover @click="visible =true">{{tableName}}</el-button>
     </div>
 </template>
 <script>
