@@ -22,9 +22,9 @@
                 </div>
             </section>
         </section>
-        <!-- <section slot="footer" class="footer">
-            <p class="footer-title">Copyright &copy;1999-${year} 智慧先齐 版权所有<a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=37010302000590"> <img src="../../assets/images/beian.png" style="float:left;"/>鲁公网安备 37010302000590号</a></p>
-        </section> -->
+        <section slot="footer" class="footer">
+            <p class="footer-title">Copyright &copy;2017-2018 智慧先齐 版权所有 <a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=37010302000590"> <img src="../../assets/images/beian.png" style="float:left;"/>鲁公网安备 37010302000590号</a></p>
+        </section> 
     </article>
     
 </template>
@@ -185,4 +185,22 @@
         margin-left: 10px;
     }
 
+    .footer {
+        height: 20px;
+        line-height: 20px;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        overflow-y: hidden;
+        font-size: 16;
+    }
+
+    .footer-title {
+        float:left;
+        height:20px;
+        line-height:20px;
+        margin: 0px 0px 0px 40%; 
+        color:#939393;
+    }
 </style>

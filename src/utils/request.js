@@ -30,7 +30,8 @@ axios.interceptors.request.use(function (config) {
 //统一处理结果
 axios.interceptors.response.use(function (response) {
     if (response && response.data === '请登录') {
-        location.hash = `#/login?callback=${encodeURIComponent(location.href)}`;
+        // location.hash = `#/login?callback=${encodeURIComponent(location.href)}`;
+        location.hash = `#/login`
         return;
     }
 

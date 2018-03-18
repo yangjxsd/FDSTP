@@ -1,6 +1,6 @@
 // see http://vuejs-templates.github.io/webpack for documentation.
 var path = require('path')
-var serverPath = '//www.yangjinxing.cn/fdstp/pc/';
+var serverPath = '//www.zhihuixianqi.com/fdstp/pc/';
 
 module.exports = {
   build: {
@@ -53,7 +53,7 @@ module.exports = {
     assetsPublicPath: '/',
     proxyTable: {
       '/fdstp': {
-        target: 'http://47.92.112.44:80',
+        target: 'http://140.143.228.192:80',
         // target: 'http://localhost:8080',
         changeOrigin: true
         // pathRewrite: {

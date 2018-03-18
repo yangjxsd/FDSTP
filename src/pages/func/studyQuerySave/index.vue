@@ -17,7 +17,7 @@
                             <div  slot="title" class="operate-table">
                                 <span>学习情况</span>
                                 <!-- <el-button @click="exportData(scope.row.id)" size="small">导出</el-button> -->
-                                <el-button @click="exportData(scope.row.id)" size="small">导出</el-button>
+                                <el-button @click="exportExcel(scope.row.id)" size="small">导出</el-button>
                             </div>
                             <TableInfo :columns="signColumns" :dataSource="signDataSource">
                                 <img slot="sign" slot-scope="props" :src="props.data.sign" width="150" />
@@ -67,6 +67,9 @@
                 this.dialogVisible = true;
                 this.querySignTable(id);
                 this.selectId = id;
+            },
+            exportExcel(id) {
+                this.exportData(this.selectId)
             }
         }
     }

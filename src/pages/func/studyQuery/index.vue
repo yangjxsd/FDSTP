@@ -20,6 +20,8 @@
                             </div>
                             <TableInfo :columns="signColumns" :dataSource="signDataSource">
                                 <img slot="sign" slot-scope="props" :src="props.data.sign" width="150" />
+                                <img slot="driver2Sign" slot-scope="props" :src="props.data.driver2Sign" width="150" />
+                                <img slot="driver3Sign" slot-scope="props" :src="props.data.driver3Sign" width="150" />
                             </TableInfo>
                         </el-dialog>
                         <el-button @click="showPopover(scope.row.id)" type="text" size="small">签到表</el-button>
